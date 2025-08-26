@@ -22,12 +22,12 @@
 ---
 
 ## 🛠 Hard Skills
-- ![JAVA](https://img.shields.io/badge/java-000000?style=for-the-badge&logo=openjdk&logoColor=FF0000) 
-- ![SpringBoot](https://img.shields.io/badge/spring-000000?style=for-the-badge&logo=spring&logoColor=0A66C2) 
-- ![Python](https://img.shields.io/badge/python-000000?style=for-the-badge&logo=python&logoColor=0A66C2) 
+- ![JAVA](https://img.shields.io/badge/java-000000?style=for-the-badge&logo=openjdk&logoColor=FF0000)
+  ![SpringBoot](https://img.shields.io/badge/spring-000000?style=for-the-badge&logo=spring&logoColor=0A66C2) 
+  ![Python](https://img.shields.io/badge/python-000000?style=for-the-badge&logo=python&logoColor=0A66C2) 
 - ![SQL](https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=postgresql&logoColor=FF0000) 
-- ![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=0A66C2) 
-- ![Git](https://img.shields.io/badge/GIT-000000?style=for-the-badge&logo=git&logoColor=FF0000) 
+  ![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=0A66C2) 
+  ![Git](https://img.shields.io/badge/GIT-000000?style=for-the-badge&logo=git&logoColor=FF0000) 
 
 ---
 
