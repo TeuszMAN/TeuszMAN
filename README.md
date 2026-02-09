@@ -45,8 +45,9 @@
 
 <div align="center">
   
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=TeuszMAN&theme=transparent&bg_color=000000&border_color=0A66C2&show_icons=true&icon_color=FF0000&title_color=0A66C2&text_color=FFFFFF)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=TeuszMAN&layout=compact&bg_color=000000&title_color=FF0000&text_color=FFFFFF&border_color=0A66C2)
+[![](https://raw.githubusercontent.com/TeuszMAN/TeuszMAN/main/profile-summary-card-output/dark/0-profile-details.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![](https://raw.githubusercontent.com/TeuszMAN/TeuszMAN/main/profile-summary-card-output/dark/1-repos-per-language.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
+[![](https://raw.githubusercontent.com/TeuszMAN/TeuszMAN/main/profile-summary-card-output/dark/3-stats.svg)](https://github.com/vn7n24fzkq/github-profile-summary-cards)
 
 </div>
 
