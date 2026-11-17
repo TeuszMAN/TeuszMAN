@@ -170,7 +170,7 @@ def gerar_svg(dias: list[tuple[date, int]]) -> str:
                 + (f' stroke="{BORDA}" stroke-opacity=".6"' if nivel == 0 else "")
                 + f"><title>{dia.day} {MESES[dia.month - 1]}: {contagem}</title></rect>"
             )
-        partes.append(f'<g class="c" style="animation-delay:{coluna * 0.012:.3f}s">{"".join(quadrados)}</g>')
+        partes.append(f"<g>{''.join(quadrados)}</g>")
 
     for linha, nome in ((1, "seg"), (3, "qua"), (5, "sex")):
         partes.append(
@@ -207,9 +207,6 @@ def gerar_svg(dias: list[tuple[date, int]]) -> str:
     css = (
         fontes_css()
         + f"text{{font-family:{FONTE};white-space:pre}}"
-        ".c{animation:entra .4s ease-out backwards}"
-        "@keyframes entra{from{opacity:0}to{opacity:1}}"
-        "@media (prefers-reduced-motion:reduce){*{animation:none!important}}"
     )
     alt = f"{milhar(total)} contribuições no GitHub no último ano, {ativos} dias ativos"
     return (
