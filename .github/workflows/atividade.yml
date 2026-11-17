@@ -1,0 +1,48 @@
+name: Atividade
+
+# Gera assets/atividade.svg, o gráfico de contribuições do README.
+on:
+  schedule:
+    - cron: "17 9 * * *" # todo dia, 06:17 em Brasília
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/atividade.py"
+      - ".github/workflows/atividade.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atividade
+  cancel-in-progress: false
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gera o gráfico de atividade
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LOGIN: ${{ github.repository_owner }}
+        run: python scripts/atividade.py assets/atividade.svg
+
+      - name: Salva no repositório se mudou
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/atividade.svg
+          if git diff --cached --quiet; then
+            echo "Nada mudou."
+          else
+            git commit -m "chore: atualiza o gráfico de atividade"
+            git pull --rebase
+            git push
+          fi
